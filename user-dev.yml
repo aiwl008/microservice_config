@@ -12,13 +12,4 @@ spring: # 服务名称，暂时没有用，讲到SpringCloud服务调用的时�
     show-sql: true # 是否打印sql语句
     generate-ddl: true # 是否自动建表
     database: mysql # jpa连接的数据库类型
-eureka:
-  client:
-    fetch-registry: true  #作为客户端需要注册到Eureka
-    register-with-eureka: true   # 作为客户端需要从Eureka获取注册信息
-    service-url:
-      defaultZone: http://127.0.0.1:8888/eureka,http://127.0.0.1:9999/eureka
-  instance:
-    prefer-ip-address: true # 优先使用该服务的IP地址注册到Eureka，在生产环境建议改为true
-    lease-renewal-interval-in-seconds: 5 # 续约间隔时间  默认30秒
-    lease-expiration-duration-in-seconds: 10  # 服务失效时间  默认90秒
+
